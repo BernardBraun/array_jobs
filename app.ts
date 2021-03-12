@@ -26,4 +26,3 @@ let job8 = new Job(8, 'Efetuar a entrega e instalação do servidor no cliente',
 let listaDeJobs: Job[] = [job1, job2, job3, job4, job5, job6, job7, job8]
 
 
-console.log(listaDeJobs)

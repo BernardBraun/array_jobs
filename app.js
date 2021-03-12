@@ -20,4 +20,3 @@ var job6 = new Job(6, 'Instalar anti-vírus no servidor.', '2020-03-18 12:00:00'
 var job7 = new Job(7, 'Realizar os testes finais antes do envio para o cliente.', '2020-03-18 17:00:00', '4 horas');
 var job8 = new Job(8, 'Efetuar a entrega e instalação do servidor no cliente', '2020-03-19 11:00:00', '3 horas');
 var listaDeJobs = [job1, job2, job3, job4, job5, job6, job7, job8];
-console.log(listaDeJobs);
