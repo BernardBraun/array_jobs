@@ -1,32 +1,23 @@
 "use strict";
 exports.__esModule = true;
-var jobs = [{
-        id: 1,
-        descricao: 'Realizar o backup do servidor Windows',
-        data_limite: '2021-03-12 14:00:00',
-        horas_job: '6 horas'
-    },
-    {
-        id: 2,
-        descricao: 'Realizar a formatação do servidor Windows',
-        data_limite: '2021-03-15 16:00:00',
-        horas_job: '8 horas'
-    },
-    {
-        id: 3,
-        descricao: 'Realizar a configuração do Active Directory do servidor Windows',
-        data_limite: '2021-03-16 12:00:00',
-        horas_job: '4 horas'
-    },
-    {
-        id: 4,
-        descricao: "Realizar a ativação das GPO's do servidor Windows",
-        data_limite: '2021-12-04 13:00:00',
-        horas_job: '5 horas'
-    },
-    {
-        id: 5,
-        descricao: 'Realizar a configuração do File Server do servidor Windows',
-        data_limite: '2021-12-04 10:00:00',
-        horas_job: '2 horas'
-    }];
+var Job = /** @class */ (function () {
+    function Job(id, descricao, data_limite, horas) {
+        this.id = 0;
+        this.id = id;
+        this.descricao = descricao;
+        this.data_limite = data_limite;
+        this.horas = horas;
+    }
+    return Job;
+}());
+exports.Job = Job;
+var job1 = new Job(1, 'Realizar o backup do servidor Windows.', '2020-03-12 16:00:00', '8 horas');
+var job2 = new Job(2, 'Formatar o servidor Windows.', '2021-03-15 17:00:00', '8 horas');
+var job3 = new Job(3, 'Configurar ActiveDirectory no servidor formatado.', '2020-03-16 12:00:00', '4 horas');
+var job4 = new Job(4, 'Configurar FileServer no servidor formatado.', '2020-03-17 10:00:00', '6 horas');
+var job5 = new Job(5, 'Configurar MailServer no servidor formatado.', '2020-03-17:00:00', '6 horas');
+var job6 = new Job(6, 'Instalar anti-vírus no servidor.', '2020-03-18 12:00:00', '4 horas');
+var job7 = new Job(7, 'Realizar os testes finais antes do envio para o cliente.', '2020-03-18 17:00:00', '4 horas');
+var job8 = new Job(8, 'Efetuar a entrega e instalação do servidor no cliente', '2020-03-19 11:00:00', '3 horas');
+var listaDeJobs = [job1, job2, job3, job4, job5, job6, job7, job8];
+console.log(listaDeJobs);
